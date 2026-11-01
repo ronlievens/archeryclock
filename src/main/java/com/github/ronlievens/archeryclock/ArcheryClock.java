@@ -1,7 +1,7 @@
 package com.github.ronlievens.archeryclock;
 
 import com.github.ronlievens.archeryclock.ui.font.RobotoMonoFont;
-import com.github.ronlievens.archeryclock.ui.main.Main;
+import com.github.ronlievens.archeryclock.ui.main.ArcheryClockFrame;
 
 import javax.swing.*;
 
@@ -31,6 +31,7 @@ public class ArcheryClock {
         }
 
         // Initialize the application on Swing's Event Dispatch Thread.
-        SwingUtilities.invokeLater(Main::createWindow);
+        SwingUtilities.invokeLater(ArcheryClockFrame::createWindow);
+
     }
 }
