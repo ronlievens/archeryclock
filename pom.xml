@@ -24,9 +24,11 @@
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss.S</maven.build.timestamp.format>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
-        <lombok.version>1.18.42</lombok.version>
-    </properties>
 
+        <lombok.version>1.18.42</lombok.version>
+        <pi4j.version>4.0.2</pi4j.version>
+        <javacv.version>1.5.14</javacv.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -97,6 +99,25 @@
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
+        </dependency>
+
+        <!-- pi4j dependencies -->
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-core</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-ffm</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
+
+        <!-- javacv dependencies + ffmpeg native libraries -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv-platform</artifactId>
+            <version>${javacv.version}</version>
         </dependency>
 
         <!-- test dependencies -->
