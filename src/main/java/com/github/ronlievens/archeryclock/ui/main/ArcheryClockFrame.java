@@ -8,6 +8,8 @@ import lombok.val;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public final class ArcheryClockFrame extends JFrame {
 
@@ -35,6 +37,7 @@ public final class ArcheryClockFrame extends JFrame {
         mainPanel.setBackground(theme.getBackgroundColor());
         setContentPane(mainPanel);
 
+
         installKeyboardShortcuts();
     }
 
@@ -56,9 +59,16 @@ public final class ArcheryClockFrame extends JFrame {
         welcome.setFont(RobotoMonoFont.get("bold", 72f));
         mainPanel.add(welcome);
 
+        Timer timer = new Timer(40, e -> {
+            welcome.setText(LocalTime.now().format(
+                DateTimeFormatter.ofPattern("HH:mm:ss")
+            ));
+
+            mainPanel.repaint();
+        });
+        timer.start();
 
         setFullscreen();
-
         setVisible(true);
     }
 

@@ -53,9 +53,6 @@ public class SwingPanelStreamer {
             recorder.setFrameRate(FPS);
             recorder.setVideoBitrate(2_000_000);
 
-            recorder.setOption("preset", "ultrafast");
-            recorder.setOption("tune", "zerolatency");
-
             recorder.start();
 
             long frameTime = 1_000_000_000L / FPS;
@@ -64,7 +61,6 @@ public class SwingPanelStreamer {
                 long start = System.nanoTime();
 
                 // Swing-component tekenen op de EDT
-                SwingUtilities.invokeAndWait(() -> {
                     Graphics2D g = image.createGraphics();
 
                     try {
@@ -80,7 +76,6 @@ public class SwingPanelStreamer {
                     } finally {
                         g.dispose();
                     }
-                });
 
                 Frame frame = converter.convert(image);
                 recorder.record(frame);
