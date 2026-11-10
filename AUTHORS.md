@@ -1,0 +1,26 @@
+# Authors
+
+- Henk Jegers (initial version, Dutch translation).
+- Yann Morère (Linux support, French translation).
+- Marco Magnanelli (Spanish translation).
+- Dennis Allerkamp (German translation).
+- Eduardo del Piano (Italian Translation).
+- Paolo Neri (Italian Translation / color scheme).
+- Gájer Szilárd (Hungarian Translation).
+- Nick Raptis (Greek Translation).
+- Claus Pedersen (Danish Translation).
+- Magnus Grabski (Swedish Translation).
+- Kalev Palling (Estonian Translation).
+- Vlastimil Schindler (Slovak Translation).
+- Rubens Mattos (Portuguese Translation).
+- Zbigniew Austyn (Polish Translation).
+- Mikhail Edelstein (Russian Translation).
+- Tomáš Ružicka (Czech Translation).
+- Joakim stegeby (Swedish Translation).
+- Dave Nesbitt (PCB design US).
+- Peter Holt (PCB design EU).
+- Dimitri Brosse (French Translation).
+- Ziyang Chen (Chinese Translation).
+- Bjørn-Cato Knutsen (Norwegian Translation).
+- Paul Jones (MAC OS version).
+- Ron Lievens (Java Windows, Linux & Macos port).

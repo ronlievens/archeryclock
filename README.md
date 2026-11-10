@@ -72,7 +72,7 @@ Not every feature or integration may be available immediately. Differences and l
 
 The application is developed using:
 
-- **Java 25** — application runtime and core implementation.
+- **Java 27** — application runtime and core implementation.
 - **Maven** — dependency management and build automation.
 - **Swing / Java2D** — graphical user interface.
 - **jpackage** — standalone application packaging.
@@ -80,7 +80,7 @@ The application is developed using:
 
 ## Building
 
-A Java 25 JDK and Maven are required.
+A Java 27 JDK and Maven are required.
 
 Build the project:
 
@@ -97,19 +97,33 @@ mvn test
 Create a release build:
 
 ```bash
-mvn clean verify -Prelease
+mvn clean package -Prelease
+```
+
+The release profile creates a self-contained application image and native installers in `target/dist/`. Build on each target operating system and architecture; `jpackage` does not cross-package. Windows creates an EXE installer, Linux creates DEB and RPM installers, and macOS creates a DMG installer. Windows builds require WiX; Linux builds require `dpkg-deb` and `rpmbuild`.
+
+Regular Maven builds keep all JavaCV platform binaries. For a smaller local release, add the matching target profile, for example `mvn clean package -Prelease,release-macos-arm64` on Apple Silicon. GitHub Actions selects the matching profile for each release runner automatically.
+
+## GitHub releases
+
+Published packages are available on [GitHub Releases](https://github.com/ronlievens/archeryclock/releases).
+
+The GitHub Actions workflow builds Linux and Windows packages for x64 and ARM64, plus macOS for ARM64. Each release build filters JavaCV native classifiers to its target OS and architecture; the ordinary Maven build still resolves all `javacv-platform` binaries. Linux releases include DEB, RPM and Flatpak packages; Flatpak uses the Freedesktop 25.08 runtime.
+
+Push a tag such as `v1.2.3` to create a stable GitHub Release; the tag sets the Maven release version. Push to `main` to build and update the `snapshot-main` pre-release. Snapshot asset filenames retain the Maven `-SNAPSHOT` suffix. Asset names use `<artifactId>-<version>-<os>-<architecture>.<extension>`, with `-app-image` added for app-image archives. Windows ARM64 uses a Zulu JDK because Temurin does not publish Windows ARM64 builds.
+
+```bash
+git tag v1.2.3
+git push origin v1.2.3
 ```
 
 ## Planned release targets
 
 | Operating system | Architecture | Package |
 |---|---|---|
-| Windows | x64 | EXE |
-| Windows | ARM64 | EXE |
-| Linux | x64 | TAR.GZ |
-| Linux | ARM64 | TAR.GZ |
-| macOS | x64 | DMG |
-| macOS | ARM64 | DMG |
+| Windows | x64 / ARM64 | Application image + EXE installer |
+| Linux | x64 / ARM64 | Application image + DEB, RPM and Flatpak |
+| macOS | x64 / ARM64 | Application image + DMG installer |
 
 A standalone JAR will also be provided.
 
@@ -122,6 +136,8 @@ This project is a tribute to the original ArcheryClock and the work behind it.
 The original Pascal/Lazarus implementation is the functional and historical reference for this rewrite. Its design, functionality and established workflows are the foundation on which this independent implementation is built.
 
 The objective is to preserve that work, not to replace its identity with something unrelated.
+
+Contributors are listed in [AUTHORS.md](AUTHORS.md).
 
 ## Disclaimer
 

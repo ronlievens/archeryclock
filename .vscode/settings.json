@@ -1,0 +1,22 @@
+{
+    // Schakelt automatisch bouwen van Java-projecten in
+    "java.autobuild.enabled": true,
+
+    // Werkt Maven- en Gradle-projectconfiguraties automatisch bij
+    "java.configuration.updateBuildConfiguration": "automatic",
+
+    // Voert automatisch null-analyse uit op basis van projectconfiguratie
+    "java.compile.nullAnalysis.mode": "automatic",
+
+    // Stopt debuggen wanneer de build mislukt
+    "java.debug.settings.onBuildFailureProceed": false,
+
+    // Sluit gevoelige .env-bestanden uit van zoekresultaten
+    "search.exclude": {
+        "**/.env": true,
+        "**/.env.*": true
+    },
+
+    // Respecteert .gitignore en andere ondersteunde ignore-bestanden
+    "search.useIgnoreFiles": true
+}

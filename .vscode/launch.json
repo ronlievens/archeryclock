@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Archery Clock",
+            "request": "launch",
+            "mainClass": "com.github.ronlievens.archeryclock.ArcheryClock",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "console": "integratedTerminal"
+        }
+    ]
+}

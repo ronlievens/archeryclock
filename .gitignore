@@ -6,6 +6,11 @@ Thumbs.db
 *.iml
 .idea/
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
 # Maven
 target/
 release.properties

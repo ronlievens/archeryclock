@@ -1,0 +1,25 @@
+id: com.github.ronlievens.archeryclock
+branch: stable
+runtime: org.freedesktop.Platform
+runtime-version: '25.08'
+sdk: org.freedesktop.Sdk
+command: ArcheryClock
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+modules:
+  - name: archeryclock
+    buildsystem: simple
+    build-commands:
+      - install -d /app/bin /app/lib /app/share/applications
+      - cp -a bin/. /app/bin/
+      - cp -a lib/. /app/lib/
+      - install -Dm644 com.github.ronlievens.archeryclock.desktop /app/share/applications/com.github.ronlievens.archeryclock.desktop
+    sources:
+      - type: dir
+        path: input
+      - type: file
+        path: com.github.ronlievens.archeryclock.desktop
