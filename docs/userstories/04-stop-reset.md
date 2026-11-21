@@ -9,7 +9,7 @@ active side and turn/series counters.
 
 **Dependencies:** AC-02.
 
-**Source:** [stop](../original-src/Countdown.pas#L13969).
+**Source:** [stop](../../original-src/Countdown.pas#L13969).
 
 **JUnit seam:** Assert a domain snapshot and timer-running flags; use a fake
 signal sink to verify any stop cue.

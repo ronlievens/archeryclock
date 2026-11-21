@@ -9,9 +9,9 @@ state changes through signal-switching routines.
 
 **Dependencies:** AC-02.
 
-**Source:** [soundsignal](../original-src/Countdown.pas#L6828),
-[TLswitch](../original-src/Countdown.pas#L2050),
-[buzzerTimerTimer](../original-src/Countdown.pas#L14465).
+**Source:** [soundsignal](../../original-src/Countdown.pas#L6828),
+[TLswitch](../../original-src/Countdown.pas#L2050),
+[buzzerTimerTimer](../../original-src/Countdown.pas#L14465).
 
 **JUnit seam:** Inject fake audio and signal-output ports that record event
 type, selected sound, and beep count.

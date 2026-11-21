@@ -9,7 +9,7 @@
     "java.compile.nullAnalysis.mode": "automatic",
 
     // Stopt debuggen wanneer de build mislukt
-    "java.debug.settings.onBuildFailureProceed": false,
+    "java.debug.settings.onBuildFailureProceed": true,
 
     // Sluit gevoelige .env-bestanden uit van zoekresultaten
     "search.exclude": {

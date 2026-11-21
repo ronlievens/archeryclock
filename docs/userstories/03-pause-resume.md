@@ -8,7 +8,7 @@ follow modes use separate control paths.
 
 **Dependencies:** AC-02.
 
-**Source:** [playpauze](../original-src/Countdown.pas#L10441).
+**Source:** [playpauze](../../original-src/Countdown.pas#L10441).
 
 **JUnit seam:** Use the fake clock and inspect a session snapshot before and
 after pause/resume.

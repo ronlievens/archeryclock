@@ -9,10 +9,10 @@ The original has built-in F1-F12 profiles and loads custom files from
 
 **Dependencies:** AC-01, AC-14.
 
-**Source:** [changescenario](../original-src/Countdown.pas#L13200),
-[getscenario](../original-src/Countdown.pas#L16285),
-[savevarF1buttonClick](../original-src/Countdown.pas#L19386),
-[built-in defaults](../original-src/Countdown.pas#L15896).
+**Source:** [changescenario](../../original-src/Countdown.pas#L13200),
+[getscenario](../../original-src/Countdown.pas#L16285),
+[savevarF1buttonClick](../../original-src/Countdown.pas#L19386),
+[built-in defaults](../../original-src/Countdown.pas#L15896).
 
 **JUnit seam:** Use a temporary scenarios directory. Assert the loaded profile
 values, not the legacy file's line ordering or encoding.

@@ -9,9 +9,9 @@ received timing, phase, turn, and related state.
 
 **Dependencies:** AC-01.
 
-**Source:** [serialRxData/perfsercommand](../original-src/Countdown.pas#L7552),
-[TCP1Receive](../original-src/Countdown.pas#L9979),
-[connectports](../original-src/Countdown.pas#L5361).
+**Source:** [serialRxData/perfsercommand](../../original-src/Countdown.pas#L7552),
+[TCP1Receive](../../original-src/Countdown.pas#L9979),
+[connectports](../../original-src/Countdown.pas#L5361).
 
 **JUnit seam:** Feed normalized updates through fake serial/network adapters.
 Do not open real ports or start real sockets in unit tests.

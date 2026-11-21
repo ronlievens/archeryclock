@@ -9,7 +9,7 @@ wait, red, green, and orange states.
 
 **Dependencies:** AC-01.
 
-**Source:** [FirstTimerTimer](../original-src/Countdown.pas#L7015).
+**Source:** [FirstTimerTimer](../../original-src/Countdown.pas#L7015).
 
 **JUnit seam:** Inject a controllable `Clock`; provide an explicit tick method
 or scheduler. Record phase-change events using a fake event/signal sink.

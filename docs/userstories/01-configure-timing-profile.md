@@ -9,11 +9,11 @@ systems. Their timing and sequence settings differ.
 
 **Dependencies:** None.
 
-**Source:** [FITA mode](../original-src/Countdown.pas#L18830),
-[FITA finals](../original-src/Countdown.pas#L18846),
-[25m one-arrow](../original-src/Countdown.pas#L18865),
-[follow mode](../original-src/Countdown.pas#L10354),
-[manual mode](../original-src/Countdown.pas#L10361).
+**Source:** [FITA mode](../../original-src/Countdown.pas#L18830),
+[FITA finals](../../original-src/Countdown.pas#L18846),
+[25m one-arrow](../../original-src/Countdown.pas#L18865),
+[follow mode](../../original-src/Countdown.pas#L10354),
+[manual mode](../../original-src/Countdown.pas#L10361).
 
 **JUnit seam:** Create profiles as domain values. Assert the activated profile
 and derived session configuration without constructing Swing components.

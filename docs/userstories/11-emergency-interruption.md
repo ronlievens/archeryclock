@@ -9,8 +9,8 @@ configurable emergency text and alert beeps.
 
 **Dependencies:** AC-02, AC-05.
 
-**Source:** [stopemergency](../original-src/Countdown.pas#L14023),
-[next](../original-src/Countdown.pas#L14222).
+**Source:** [stopemergency](../../original-src/Countdown.pas#L14023),
+[next](../../original-src/Countdown.pas#L14222).
 
 **JUnit seam:** Use a fake clock and fake signal sink. Test each policy with a
 non-final timed session and a known active turn.

@@ -10,7 +10,7 @@ and its configured command check passes.
 
 **Dependencies:** AC-03 through AC-06, AC-08 through AC-11, AC-15.
 
-**Source:** [TCPaccess1Receive](../original-src/Countdown.pas#L10136).
+**Source:** [TCPaccess1Receive](../../original-src/Countdown.pas#L10136).
 
 **JUnit seam:** Test a command handler with an in-memory command transport.
 Assert command dispatch and resulting session state; do not bind a TCP port.

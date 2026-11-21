@@ -9,9 +9,9 @@ network options, and remote-control settings.
 
 **Dependencies:** AC-01.
 
-**Source:** [first-run defaults](../original-src/Countdown.pas#L12346),
-[Setsystemsettings](../original-src/Countdown.pas#L15716),
-[repository defaults](../original-src/settings).
+**Source:** [first-run defaults](../../original-src/Countdown.pas#L12346),
+[Setsystemsettings](../../original-src/Countdown.pas#L15716),
+[repository defaults](../../original-src/settings).
 
 **JUnit seam:** Use JUnit `@TempDir` and a settings repository/service that can
 load and save settings without initializing hardware.

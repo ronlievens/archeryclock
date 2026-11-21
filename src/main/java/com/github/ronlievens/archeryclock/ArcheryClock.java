@@ -28,10 +28,10 @@ public final class ArcheryClock extends JFrame {
 
         archeryClock.installKeyboardShortcuts();
 
-        val mainPanel = new MainPanel();
+        val mainPanel = new MainPanel(WINDOW_WIDTH, WINDOW_HEIGHT);
         archeryClock.setContentPane(mainPanel);
 
-        mainPanel.start();
+        // mainPanel.start();
     }
 
     private void installKeyboardShortcuts() {

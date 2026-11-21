@@ -9,8 +9,8 @@ turns, and practice turns.
 
 **Dependencies:** AC-01, AC-05.
 
-**Source:** [finalyzeturn](../original-src/Countdown.pas#L6924);
-sequence variants are loaded by [Setsettings](../original-src/Countdown.pas#L15896).
+**Source:** [finalyzeturn](../../original-src/Countdown.pas#L6924);
+sequence variants are loaded by [Setsettings](../../original-src/Countdown.pas#L15896).
 
 **JUnit seam:** Use explicit sequence/profile fixtures; assert the progression
 state after each accepted turn completion.

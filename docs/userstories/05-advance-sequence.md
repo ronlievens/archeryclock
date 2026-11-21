@@ -9,8 +9,8 @@ duplicate advances.
 
 **Dependencies:** AC-02.
 
-**Source:** [next](../original-src/Countdown.pas#L14222),
-[end timeout](../original-src/Countdown.pas#L14973).
+**Source:** [next](../../original-src/Countdown.pas#L14222),
+[end timeout](../../original-src/Countdown.pas#L14973).
 
 **JUnit seam:** Apply operations directly to a session service. Use a
 controllable guard timer for duplicate-advance tests.

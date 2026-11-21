@@ -10,8 +10,8 @@ modes.
 
 **Dependencies:** AC-02.
 
-**Source:** [starttostart](../original-src/Countdown.pas#L19638),
-[finalyzeturn](../original-src/Countdown.pas#L6924).
+**Source:** [starttostart](../../original-src/Countdown.pas#L19638),
+[finalyzeturn](../../original-src/Countdown.pas#L6924).
 
 **JUnit seam:** Use the fake clock and a profile with a known preparation
 duration. Assert phase transitions and remaining time.

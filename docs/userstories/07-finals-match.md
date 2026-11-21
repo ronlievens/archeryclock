@@ -9,7 +9,7 @@ per turn or per end.
 
 **Dependencies:** AC-01, AC-02, AC-06.
 
-**Source:** [nextfinal](../original-src/Countdown.pas#L14112).
+**Source:** [nextfinal](../../original-src/Countdown.pas#L14112).
 
 **JUnit seam:** Seed finals state for each side and timing policy; assert the
 side, phase, and both countdown values after an advance.

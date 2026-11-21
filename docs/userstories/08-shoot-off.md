@@ -9,9 +9,9 @@ turn limits in standard and finals modes.
 
 **Dependencies:** AC-01, AC-02, AC-06.
 
-**Source:** [soff](../original-src/Countdown.pas#L10431),
-[nextfinal](../original-src/Countdown.pas#L14112),
-[finalyzeturn](../original-src/Countdown.pas#L6924).
+**Source:** [soff](../../original-src/Countdown.pas#L10431),
+[nextfinal](../../original-src/Countdown.pas#L14112),
+[finalyzeturn](../../original-src/Countdown.pas#L6924).
 
 **JUnit seam:** Use a profile with distinct regular and shoot-off timings.
 Assert that activating a shoot-off does not mutate regular timing values.

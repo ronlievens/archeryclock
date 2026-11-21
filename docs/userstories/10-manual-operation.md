@@ -8,8 +8,8 @@ otherwise. Manual mode does not run the automatic countdown.
 
 **Dependencies:** AC-01.
 
-**Source:** [next](../original-src/Countdown.pas#L14222),
-[soundsignal](../original-src/Countdown.pas#L6828).
+**Source:** [next](../../original-src/Countdown.pas#L14222),
+[soundsignal](../../original-src/Countdown.pas#L6828).
 
 **JUnit seam:** Use a manual-mode session and fake signal sink; assert phase
 state and emitted manual beep count.
